@@ -1,0 +1,10 @@
+# The LTS version must agree with what's in the nixpkgs
+# version in shell.nix.
+resolver: lts-8.3
+
+nix:
+  # Nix off by default; use `stack --nix` instead.
+  # This is so that `nix-build` calling `stack` doesn't try to
+  # call nix-shell again when already inside nix.
+  enable: false
+  shell-file: default.nix
