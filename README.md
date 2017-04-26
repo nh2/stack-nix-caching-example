@@ -13,3 +13,9 @@ Incremental build with stack:
 ```
 stack --nix build
 ```
+
+Full build with with stack inside nix-build, generating a nix package (last line of output):
+
+```
+nix-build
+```
